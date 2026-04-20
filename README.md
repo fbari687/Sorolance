@@ -1,101 +1,76 @@
-# Stellar Notes DApp
+# Sorolance
 
-**Stellar Notes DApp** - Blockchain-Based Decentralized Note-Taking System
+**Sorolance** - Milestone-Based Decentralized Freelance Marketplace
 
 ## Project Description
 
-Stellar Notes DApp is a decentralized smart contract solution built on the Stellar blockchain using Soroban SDK. It provides a secure, immutable platform for managing personal notes directly on the blockchain. The contract ensures that your data is stored transparently and is only manageable through predefined smart contract functions, eliminating reliance on centralized database providers.
+Sorolance is a decentralized smart contract solution built on the Stellar blockchain using the Soroban SDK. It provides a secure, trustless platform for managing freelance projects and payments. By utilizing milestone-based smart contracts, the system eliminates the need for expensive centralized middleman platforms, ensuring that clients' funds are securely locked in escrow and freelancers are guaranteed payment upon successful completion of defined tasks.
 
-The system allows users to create, view, and delete notes, leveraging the efficiency and security of the Stellar network. Each note is uniquely identified and stored within the contract's instance storage, ensuring data persistence and reliability.
+The application empowers both parties by bringing transparency to project workflows, securing budgets upfront, and executing automatic payouts through the speed and efficiency of the Stellar network.
 
 ## Project Vision
 
-Our vision is to revolutionize personal productivity in the digital age by:
+Our vision is to revolutionize the global gig economy by:
 
-- **Decentralizing Data**: Moving note-taking from centralized servers to a global, distributed blockchain
-- **Ensuring Ownership**: Empowering users to have complete control and ownership over their digital thoughts and information
-- **Guaranteeing Immutability**: Providing a permanent, tamper-proof record of notes that cannot be altered or deleted by third parties
-- **Enhancing Privacy**: Leveraging blockchain security to protect personal information from unauthorized access
-- **Building Trustless Systems**: Creating a platform where data integrity is guaranteed by code, not by company promises
+- **Removing Intermediaries**: Eliminating high platform fees (often 10-20%) charged by traditional freelance marketplaces.
+- **Ensuring Fair Compensation**: Guaranteeing freelancers get paid for their hard work by locking client funds in an immutable smart contract before work begins.
+- **Building Trustless Collaboration**: Providing clients with the security that their funds will only be released when specific, agreed-upon milestones are met.
+- **Empowering Global Talent**: Leveraging Stellar's borderless, low-cost micro-transactions to connect clients and freelancers worldwide without banking friction.
 
-We envision a future where digital information is truly personal and sovereign, empowering individuals with complete autonomy over their digital assets.
+We envision a future where independent professionals have complete autonomy and financial security, backed by the mathematical certainty of blockchain technology.
 
 ## Key Features
 
-### 1. **Simple Note Creation**
+### 1. **Milestone-Based Escrow**
+- Break down large projects into manageable milestones
+- Lock funds securely upfront for the entire project
+- Release funds sequentially as each phase is completed
 
-- Create notes with just one function call
-- Specify title and content for each note
-- Automated ID generation for unique identification
-- Persistent storage on the Stellar blockchain
+### 2. **Trustless Fund Management**
+- Client funds are held in the smart contract, not by a third party
+- Neither party can unilaterally withdraw locked funds without mutual agreement or task completion
+- Automated payouts triggered instantly upon client approval
 
-### 2. **Efficient Data Retrieval**
+### 3. **Transparent Project Tracking**
+- Real-time on-chain state reflects project progress
+- Immutable record of submitted work and approved milestones
+- Clear visibility of locked vs. released funds for both parties
 
-- Fetch all stored notes in a single call
-- Structured data representation for easy frontend integration
-- Quick access to your entire note collection
-- Real-time synchronization with the blockchain state
+### 4. **Stellar Network Efficiency**
+- Sub-cent transaction fees make micro-milestones economically viable
+- Near-instant settlement ensures freelancers receive funds without delay
+- Built with the modern, developer-friendly Soroban Rust SDK
 
-### 3. **Secure Deletion**
-
-- Remove specific notes using their unique IDs
-- Permanent removal from the contract storage
-- Clean and efficient storage management
-- Immediate update of the note list after deletion
-
-### 4. **Transparency and Security**
-
-- View all note activities on the blockchain
-- Blockchain-based verification of all storage actions
-- Immutable records of note creation and deletion
-- Protected against unauthorized modifications
-
-### 5. **Stellar Network Integration**
-
-- Leverages the high speed and low cost of Stellar
-- Built using the modern Soroban Smart Contract SDK
-- Scalable architecture for growing note collections
-- Interoperable with other Stellar-based services
+### 5. **Secure Work Submission**
+- On-chain logging of milestone submissions
+- Cryptographically verified approvals by the client's wallet
 
 ## Contract Details
 
-- Contract Address: CBLU4IUASQ4WUMOXBFLZRSBBLILGOH33GS4LUPKFBCCCMJCDQNMF7G2M
-  (Screenshot has been removed)
+- Contract Address: [YOUR_CONTRACT_ADDRESS_HERE]
+  ![alt text](screenshot.png)
 
 ## Future Scope
 
 ### Short-Term Enhancements
-
-1. **Note Encryption**: Support for end-to-end encryption of note content for enhanced privacy
-2. **Category Management**: Add tags and categories to organize notes efficiently
-3. **Rich Text Support**: Extend support beyond plain text to include Markdown and formatted content
-4. **Search Functionality**: Implement advanced search filters for large note collections
+1. **Multi-Asset Support**: Allow escrow contracts using stablecoins like USDC alongside XLM
+2. **Dispute Resolution Mechanism**: Introduce a decentralized arbiter role to resolve conflicts
+3. **Time-Locked Milestones**: Implement deadlines that auto-refund clients if freelancers ghost the project
 
 ### Medium-Term Development
-
-5. **Collaborative Notes**: Implement multi-signature requirements for shared or collaborative note-taking
-   - Shared access for multiple addresses
-   - Permission-based editing and viewing
-   - Version history tracking
-6. **Notification System**: Off-chain bridge to alert users of new updates or shared notes
-7. **Asset Attachment**: Capability to attach digital assets or tokens to specific notes
-8. **Inter-Contract Integration**: Allow other smart contracts to interact with and store data in the notes contract
+4. **On-Chain Reputation System**: Build a rating and review system permanently tied to a user's wallet address
+5. **Portfolio Integration**: Allow freelancers to mint completed milestones as verified "Proof of Work" NFTs
+6. **Decentralized Chat**: Integrate encrypted wallet-to-wallet messaging for project communication
 
 ### Long-Term Vision
-
-9. **Cross-Chain Synchronization**: Extend note storage to multiple blockchain networks
-10. **Decentralized UI Hosting**: Host the frontend on IPFS or similar decentralized platforms
-11. **AI-Powered Summarization**: Optional integration with AI to help users summarize their notes
-12. **Privacy Layers**: Implement zero-knowledge proofs for completely private note content
-13. **DAO Governance**: Community-driven protocol improvements and feature prioritization
-14. **Identity Management**: Integration with decentralized identity (DID) systems for user management
+7. **DAO Governance**: Transition platform parameter control (like arbiter fees) to a community-governed DAO
+8. **Cross-Chain Escrow**: Enable clients to fund projects from other blockchains
+9. **Decentralized Identity (DID)**: Implement KYC-less verification systems using zero-knowledge proofs
 
 ### Enterprise Features
-
-15. **Corporate Documentation**: Adapt the system for secure corporate record-keeping
-16. **Immutable Logging**: Create time-locked logs for audit purposes
-17. **Automated Reporting**: Automatic note triggers for periodic reporting
-18. **Multi-Language Support**: Expand accessibility with internationalization
+10. **Enterprise Payroll Pipelines**: Allow agencies to fund multiple escrow contracts in batches
+11. **Tax & Invoicing Tools**: Auto-generate compliant PDF invoices triggered by smart contract events
+12. **Custom Arbitration Workflows**: Support corporate-defined legal arbiters for high-value contracts
 
 ---
 
@@ -103,16 +78,18 @@ We envision a future where digital information is truly personal and sovereign, 
 
 - Soroban SDK
 - Rust programming language
-- Stellar blockchain network
+- Stellar blockchain network (Testnet/Mainnet)
+- Compatible Stellar Wallet (e.g., Freighter)
 
 ## Getting Started
 
-Deploy the smart contract to Stellar's Soroban network and interact with it using the three main functions:
+Deploy the smart contract to Stellar's Soroban network and interact with it using the core escrow functions:
 
-- `create_note()` - Create a new note with a title and content
-- `get_notes()` - Retrieve all stored notes from the contract
-- `delete_note()` - Remove a specific note by its ID
+- `create_project()` - Initialize a new escrow contract, define milestones, and lock client funds.
+- `submit_milestone()` - Freelancer calls this to mark a specific phase as complete.
+- `approve_and_pay()` - Client approves the work, triggering the contract to release milestone funds to the freelancer.
+- `cancel_project()` - Mutual cancellation feature to safely refund the client before work begins.
 
 ---
 
-**Stellar Notes DApp** - Securing Your Thoughts on the Blockchain
+**Sorolance** - Securing Trust in the Decentralized Gig Economy
