@@ -47,8 +47,7 @@ We envision a future where independent professionals have complete autonomy and 
 
 ## Contract Details
 
-- Contract Address: [YOUR_CONTRACT_ADDRESS_HERE]
-  ![alt text](screenshot.png)
+- Contract Address: CDDOUEGEMLIUJEGW2OCHZYLJT74BHOJICLRHJYQS3RLLZL3IPVZOEX7T
 
 ## Future Scope
 
